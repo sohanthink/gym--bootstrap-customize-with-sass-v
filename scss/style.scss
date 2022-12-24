@@ -7,6 +7,7 @@
 // 2. Include any default variable overrides here
 $primary: #99D6EA;
 $secondary : #BB3D41;
+$info : #EFEDE8;
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
 
@@ -16,11 +17,13 @@ $custom_font: (
   "nav_font_size" :12px,
   64 : 64px,
   16 : 16px,
+  40 : 40px,
 );
 
 $custom_spacers: (
   60 : 60px,
   "button_padding" : 16px 25px,
+  40 : 40px,
 );
 
 $spacers: map-merge($spacers, $custom_spacers);
