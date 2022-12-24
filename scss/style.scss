@@ -24,8 +24,16 @@ $custom_spacers: (
   60 : 60px,
   "button_padding" : 16px 25px,
   40 : 40px,
+  100 : 100px,
 );
 
+$custom-position-values: (
+  8 : 8%,
+  18 : 18px,
+);
+
+
+$position-values: map-merge($position-values, $custom-position-values);
 $spacers: map-merge($spacers, $custom_spacers);
 $font-sizes: map-merge($font-sizes, $custom_font);
 
@@ -39,7 +47,6 @@ $font-sizes: map-merge($font-sizes, $custom_font);
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
 @import "../node_modules/bootstrap/scss/images";
-@import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/helpers";
 
@@ -53,9 +60,20 @@ $font-sizes: map-merge($font-sizes, $custom_font);
 
 // 8. Add additional custom code here
 
+.container{
+  width: 1500px;
+  margin: 0 auto;
+}
 .family{
     font-family: 'Poppins', sans-serif;
 }
 .letter-spacing1{
     letter-spacing: 1px;
+}
+.circle{
+  height: 100px;
+  width: 100px;
+}
+.index{
+  z-index: 999;
 }
